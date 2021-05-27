@@ -64,3 +64,10 @@ The ```/src``` folder contains a subfolder ```/tests``` with unit tests per prog
 # Running tests with pytest
 pytest
 ```
+
+### Dependencies
+
+You may need to install dependencies:
+```bash
+pip install -r pip-test-requirements.txt
+```

@@ -1,0 +1,6 @@
+#
+####### list of items to be installed using pip install -r pip-test-requirements.txt #######
+#
+jsonschema
+pytest
+#

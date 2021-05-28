@@ -1,5 +1,4 @@
 # inspired by https://docs.github.com/en/actions/guides/building-and-testing-python
-# designed to be run locally (in addition to Github) with "act"
 name: Validate JSON
 
 on: [push, pull_request]

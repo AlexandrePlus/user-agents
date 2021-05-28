@@ -11,9 +11,6 @@ jobs:
         python-version: [2.7, 3.9]
     steps:
       - uses: actions/checkout@v2
-        with:
-            # Must be used to trigger workflow after push
-            token: ${{ secrets.ACCESS_TOKEN }}
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:

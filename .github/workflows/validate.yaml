@@ -1,4 +1,5 @@
 # inspired by https://docs.github.com/en/actions/guides/building-and-testing-python
+# can to be run locally (in addition to Github) with "act" : act -s GITHUB_TOKEN=[github token with public_repo scope]
 name: Validate JSON
 
 on: [push, pull_request]
@@ -21,8 +22,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r pip-test-requirements.txt
-      - name: Display files
-        run: ls
       - name: Test with pytest
         run: |
           python -m pytest
